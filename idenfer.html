@@ -11,7 +11,9 @@
 <body>
   <div id="root">
 
-
+    <div>첫번째</div>
+    <div>두번째</div>
+    <div>세번째</div>
   </div>
 
 
@@ -22,53 +24,14 @@
 
 
   <script>
-
-    let coffee = ["원두를 고르고", "원두를 기계에 넣어 내리고","원두를 기계에 넣고 나온 것을","물이랑 타서","컵에 담는다",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,];
-
-    for(let i = 0;i < coffee.length;i++){
-      console.log(coffee[i]);
-
-    }
-
-    console.log(coffee["length"]);
-    let coffeee = {
-      a : "원두고르기",
-      b : "원두를 기계에 넣어 나온걸 담고",
-      c : "나온거랑 물이랑 썩는다.",
-      d : "용기에 담아 마신다."
-    }
-
-    console.log(coffeee["a"]);
-    console.log(coffeee["b"]);
-    console.log(coffeee["c"]);
-    console.log(coffeee["d"]);
-
-
-
-let itsMe = {
-      1 : "kwonyejun",
-      2 : 20,
-      3 : "developer",
-      4 : "oracle",
-      5 : "마라탕",
-     
-    };
-
-  let itMe = ["kyj" , 20 ,"developer","마라탕",,,,,,,,];
-
-  console.dir(itMe);
-
-
-
-    console.log(itsMe[1]);
-    console.log(typeof(itMe) );
-    console.log(itMe.length);
-    console.log(itMe["length"]);
-
-    for(let i = 0; i < itMe.length; i++){
-      console.log(itMe[i]);
-
-    }
+    let root;
+    console.log(root);
+    root = document;
+    console.dir(root);
+    console.log(typeof(root));
+    let a = root.getElementById('root');
+    console.log(a); // 해석하기 위한 html을 보여준다. 해석 한 후
+    console.dir(a); //객체를 보여주고 있고 해석 하기 전
   </script>
 </body>
 
