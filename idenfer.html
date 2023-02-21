@@ -6,6 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    #root{
+    }
+  </style>
 </head>
 
 <body>
@@ -25,13 +29,25 @@
 
   <script>
     let root;
-    console.log(root);
     root = document;
+    let colorblue = "blue";
+    let a = root.getElementById('root');
+   
+    a.style.backgroundColor = colorblue;
+
+    console.log(root);
+
     console.dir(root);
     console.log(typeof(root));
-    let a = root.getElementById('root');
+
     console.log(a); // 해석하기 위한 html을 보여준다. 해석 한 후
     console.dir(a); //객체를 보여주고 있고 해석 하기 전
+    console.log(a.children[1]);
+
+    a.children[1].style.color = "red";
+    a.lastChild.style.fontSize="120px";
+    a.children[2].style.fontSize="120px";
+
   </script>
 </body>
 
